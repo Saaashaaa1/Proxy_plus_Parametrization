@@ -15,13 +15,14 @@ public class BaseClass {
 
     @BeforeClass
     public static void init() {
-        driver = DriverFactory.getDriver(BROWSER.CHROMEPROXY);
+        driver = DriverFactory.getDriver(BROWSER.CHROMEPROXY); // (For Paramererized+ResourceBundle change to BROWSER.CHROME)
+                                                               //(For Proxy change to BROWSER.CHROMEPROXY
 
     }
 
     @AfterClass
     public static void close() {
-      //  driver.close();(For Proxy_Homework)
+      //  driver.close();(For Proxy_Homework comment)
         server.stop();
     }
 
