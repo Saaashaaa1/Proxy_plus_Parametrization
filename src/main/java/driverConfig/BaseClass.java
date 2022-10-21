@@ -25,7 +25,6 @@ public class BaseClass {
       //  driver.close();(For Proxy_Homework comment)
         server.stop();
     }
-
     public static WebDriver getDriver() {
         return driver;
     }
