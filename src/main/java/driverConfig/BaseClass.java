@@ -15,14 +15,14 @@ public class BaseClass {
 
     @BeforeClass
     public static void init() {
-        driver = DriverFactory.getDriver(BROWSER.CHROMEPROXY);
+        driver = DriverFactory.getDriver(BROWSER.CHROME);
 
     }
 
     @AfterClass
     public static void close() {
-        //driver.close();
-        server.stop();
+        driver.close();
+       // server.stop();
     }
 
     public static WebDriver getDriver() {
