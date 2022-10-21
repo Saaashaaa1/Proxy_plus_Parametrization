@@ -21,8 +21,8 @@ public class BaseClass {
 
     @AfterClass
     public static void close() {
-        driver.close();
-       // server.stop();
+      //  driver.close();
+        server.stop();
     }
 
     public static WebDriver getDriver() {
