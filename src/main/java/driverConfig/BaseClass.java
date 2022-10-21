@@ -15,7 +15,7 @@ public class BaseClass {
 
     @BeforeClass
     public static void init() {
-        driver = DriverFactory.getDriver(BROWSER.CHROME);
+        driver = DriverFactory.getDriver(BROWSER.CHROMEPROXY);
 
     }
 
