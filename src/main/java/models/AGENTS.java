@@ -4,7 +4,7 @@ import driverConfig.BaseClass;
 import net.lightbody.bmp.filters.RequestFilter;
 
 public class AGENTS {
-    public static void AgentTyope(UserAgents agents){
+    public static void AgentType(UserAgents agents){
         switch (agents){
             case IPHONE:
                 setUserIphone();

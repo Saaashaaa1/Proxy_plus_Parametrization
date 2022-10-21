@@ -5,6 +5,8 @@ import net.lightbody.bmp.BrowserMobProxyServer;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.openqa.selenium.WebDriver;
+import driverConfig.BROWSER;
+import driverConfig.DriverFactory;
 
 public class BaseClass {
     public static WebDriver driver;
@@ -13,7 +15,7 @@ public class BaseClass {
 
     @BeforeClass
     public static void init() {
-        driver = DriverFactory.getDriver(BROWSER.LOGWITHOPTIONS);
+        driver = DriverFactory.getDriver(BROWSER.CHROMEPROXY);
 
     }
 

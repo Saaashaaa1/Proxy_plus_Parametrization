@@ -120,7 +120,7 @@ public class DriverFactory {
 
     private static WebDriver initChrome() {
         Properties props = System.getProperties();
-        props.setProperty("webdriver.chrome.driver", "C:\\driversweb\\chromedriver.exe");
+       // props.setProperty("webdriver.chrome.driver", "C:\\driversweb\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
