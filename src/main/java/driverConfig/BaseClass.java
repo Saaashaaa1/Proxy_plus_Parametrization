@@ -21,7 +21,7 @@ public class BaseClass {
 
     @AfterClass
     public static void close() {
-      //  driver.close();
+      //  driver.close();(For Proxy_Homework)
         server.stop();
     }
 
